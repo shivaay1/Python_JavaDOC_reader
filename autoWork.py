@@ -1163,7 +1163,7 @@ class JavaInterface( HTMLFile ):
 
     def constructFile( self, packageName ):
 
-        folder = "C:/Users/Lalu/Downloads/2020_OOP_UE_Angabe1/project2"
+        folder = "C:/Users/Lalu/Downloads/2020_OOP_UE_Angabe1/project2" // your folder where you want to save the JavaDoc files
         pages = [ [self.classNameSpecifier()], self.classFields(), self.classConstructors(), self.classMethods()]
 
 
@@ -1195,13 +1195,13 @@ class JavaInterface( HTMLFile ):
 
 
 
-file = "C:/Users/Lalu/Downloads/2020_OOP_UE_Beispiel2_Angabe/2020_OOP_UE_Beispiel2_Angabe/doc/overview-frame.html"
+file = "C:/Users/Lalu/Downloads/2020_OOP_UE_Beispiel2_Angabe/2020_OOP_UE_Beispiel2_Angabe/doc/overview-frame.html" // path to the "overview-frame.html" file of the JavaDoc
 htmlFile = HTMLFile( file )
 
 packages = htmlFile.createPackages()
 
 try:
-    folder = "C:/Users/Lalu/Downloads/2020_OOP_UE_Angabe1/project2"
+    folder = "C:/Users/Lalu/Downloads/2020_OOP_UE_Angabe1/project2" //path of the folder where you want to save the JavaDoc files
     os.mkdir(folder)
     os.chdir(folder)
     print(os.getcwd())
